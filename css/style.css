@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../assets/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  align-content: center;
+  justify-items: space-evenly; }
+  header nav .navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #242727;
+    opacity: .8;
+    width: 750px;
+    flex-wrap: nowrap;
+    border-radius: 10px; }
+    header nav .navbar li {
+      margin: 10px; }
+      header nav .navbar li a:hover {
+        color: black; }
+
+.grid {
+  display: grid;
+  border-top: 30px;
+  height: 600px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img1 none none img4" "img1 img2 img3 img4";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%; }
+
+section .texto-index {
+  margin: 5%;
+  height: 20px;
+  text-align: center;
+  justify-content: center; }
+
+.paginas {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  margin: 15px; }
+  .paginas .texto-container {
+    flex-direction: column;
+    align-content: center; }
+    .paginas .texto-container .texto {
+      font-family: Verdana;
+      font-weight: 20px;
+      font-size: 20px;
+      text-align: center; }
+  .paginas .imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-bottom: 15px; }
+  .paginas .imagenes2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin: 15px; }
+
+footer {
+  background-color: orange;
+  width: 100%;
+  border-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  margin-bottom: 15px;
+  align-items: center;
+  align-content: center;
+  height: 100px; }
+  footer .redes {
+    justify-content: space-around; }
+
+h1 {
+  color: white;
+  margin: 15px; }
+
+h2 {
+  color: antiquewhite;
+  margin: 10px; }
+
+h3 {
+  color: black;
+  margin: 5px; }
+
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    align-content: center;
+    justify-items: space-evenly; }
+    header .navbar {
+      margin-top: 0px;
+      flex-wrap: wrap;
+      width: 100%; }
+      header .navbar li {
+        margin: 0px; }
+    header main article .grid {
+      display: grid;
+      height: 600px;
+      margin: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 300px);
+      grid-template-areas: "img1 img2" "img3 img4"; }
+    header main article a .img1 {
+      height: 300px;
+      width: 300px; }
+    header main article a .img4 {
+      height: 300px;
+      width: 300px; }
+    header main article a .img2 {
+      height: 300px;
+      width: 300px; }
+    header main article a .img3 {
+      height: 300px;
+      width: 300px; }
+  footer .redes {
+    display: flex;
+    flex-direction: row; }
+    footer .redes img {
+      width: 50px;
+      height: 50px; } }
+
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 14px; }
+  header h1 {
+    font-size: 25px; }
+  main article .grid {
+    display: grid;
+    height: 600px;
+    margin: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: "img1 img2" "img3 img4"; }
+  footer .redes {
+    display: flex;
+    flex-direction: row; }
+    footer .redes img {
+      width: 40px;
+      height: 40px; } }
+
+@media (max-width: 580px) {
+  .navbar {
+    width: 100%; }
+  .grid {
+    display: grid;
+    height: 600px;
+    margin: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: "img1 img2" "img3 img4"; }
+  .img1 img {
+    width: 200px;
+    height: 200px; }
+  .img2 img {
+    width: 200px;
+    height: 200px; }
+  .img3 img {
+    width: 200px;
+    height: 200px; }
+  .img4 img {
+    width: 200px;
+    height: 200px; } }
+
+@media (max-width: 320px) {
+  .redes img {
+    width: 20px;
+    height: 20px; } }

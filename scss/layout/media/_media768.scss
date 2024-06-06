@@ -1,0 +1,43 @@
+@media (max-width: 768px){
+
+
+    header{
+        
+            h2 {
+                font-size: 14px;
+            }
+            
+            h1 {
+                font-size: 25px;
+            }
+            
+        
+    }
+
+    main {
+        article{
+            .grid{
+                display: grid;
+                height: 600px;
+                margin: 10px;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,300px);
+                grid-template-areas: 
+                "img1 img2"
+                "img3 img4";
+            }
+        }
+    }
+    
+    footer{
+        .redes{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+

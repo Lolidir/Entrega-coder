@@ -1,0 +1,15 @@
+footer {
+    background-color: map-get($color, color4);
+    width: 100%;
+    border-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    margin-bottom: 15px;
+    align-items: center;
+    align-content: center;
+    height: 100px;
+    .redes {
+        justify-content: space-around;
+    }
+}

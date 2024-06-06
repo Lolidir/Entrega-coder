@@ -41,9 +41,7 @@ header {
     height: 300px;
     align-content: center;
     justify-content: space-evenly;
-    justify-items: space-evenly;
-    
-    
+    justify-items: space-evenly; 
 }
 
 h1 {
@@ -117,7 +115,7 @@ footer {
         
 }
 
-.parador {
+.paginas {
     display: flex;
     justify-items: center;
     justify-content: center;
@@ -283,5 +281,12 @@ footer {
 
     .texto {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 380px){
+    .redes img {
+        width: 10px;
+        height: 10px;
     }
 }

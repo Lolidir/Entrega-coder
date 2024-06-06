@@ -1,0 +1,33 @@
+header {
+    @include flex(column,space-evenly,center);
+    background-image: url("../assets/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    align-content: center;
+    justify-items: space-evenly; 
+    nav {
+        .navbar{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color: rgb(36, 39, 39);
+            opacity: .8;
+            width: 750px; 
+            flex-wrap: nowrap; 
+            border-radius: 10px;
+            li {
+                margin: 10px;
+                a{ 
+                    &:hover{
+                    color: black;
+                    }
+                
+                }
+            }
+
+        }
+    }
+}

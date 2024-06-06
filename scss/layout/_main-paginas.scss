@@ -1,0 +1,30 @@
+.paginas {
+    @include flex(row-reverse,space-around,center);
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    margin: 15px;
+    .texto-container{
+        flex-direction: column;
+        align-content: center;
+        .texto {
+            font-family: Verdana;
+            font-weight: 20px;
+            font-size: 20px ;
+            text-align: center;
+        }
+    }
+    .imagenes {
+        @include flex(row,center,baseline);
+        flex-wrap: nowrap;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .imagenes2 {
+        @include flex(column,center,center);
+        flex-wrap: nowrap;
+        gap: 15px;
+        margin: 15px;
+    }
+}
